@@ -1,0 +1,191 @@
+/* Basic typography styles */
+.space-grotesk-header {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans-text {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Global styles */
+body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header styles */
+.sivuston_ylalaita {
+    font-size: 40px;
+    background-color: #004445;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Navigation bar */
+.navigaationauha {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navigaationauha ul {
+    list-style-type: none;
+    padding: 1;
+    margin: 1;
+    text-align: center;
+}
+
+.navigaationauha li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigaationauha a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Section title */
+.otsikko {
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: #2C7873;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 36px;
+    color: #004445;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+    color: #2C7873;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Button row container */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Column styling for buttons */
+.column {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 25px 10px;
+    background-color: #004445;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #021C1E;
+}
+
+/* Main content styles */
+.sisalto {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto 40px auto;
+    color: #004445;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 800px;
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Footer */
+.sivuston_alalaita {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2C7873;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sivuston_alalaita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sivuston_alalaita li {
+    display: inline;
+}
+
+.sivuston_alalaita a {
+    text-decoration: none;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+}
+
+/*Linkit*/
+.links {
+    text-decoration: none;
+    color: #021C1E;
+    /* You can replace 'inherit' with a specific color code */
+}
